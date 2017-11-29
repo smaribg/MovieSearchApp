@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{F85542DF-9A81-4C9F-B27A-51418F3D3121}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/MovieApi.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/MovieSearchController.cs">
     <Files>
-      <File FileName="iOS/MovieSearchController.cs" Line="47" Column="43" />
-      <File FileName="iOS/AppDelegate.cs" Line="28" Column="43" />
-      <File FileName="MovieSearch/MovieDbSettings.cs" Line="3" Column="1" />
-      <File FileName="MovieSearch/MovieApi.cs" Line="21" Column="17" />
-      <File FileName="MovieSearch/IMovieApi.cs" Line="8" Column="13" />
+      <File FileName="iOS/MovieSearchController.cs" Line="23" Column="38" />
       <File FileName="iOS/Main.cs" Line="21" Column="1" />
+      <File FileName="MovieSearch/MovieApi.cs" Line="1" Column="1" />
+      <File FileName="iOS/AppDelegate.cs" Line="29" Column="85" />
+      <File FileName="iOS/MovieDataSource.cs" Line="1" Column="1" />
+      <File FileName="iOS/MovieListController.cs" Line="19" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

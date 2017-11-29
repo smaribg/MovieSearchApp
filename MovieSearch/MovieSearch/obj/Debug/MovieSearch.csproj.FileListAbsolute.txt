@@ -9,3 +9,14 @@
 /Users/Andri/Projects/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.pdb
 /Users/Andri/Projects/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.xml
 /Users/Andri/Projects/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csprojResolveAssemblyReference.cache
+/Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/bin/Debug/MovieSearch.dll
+/Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/bin/Debug/MovieSearch.pdb
+/Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.dll
+/Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/bin/Debug/Newtonsoft.Json.dll
+/Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/bin/Debug/Newtonsoft.Json.xml
+/Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.pdb
+/Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.xml
+/Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csprojResolveAssemblyReference.cache
+/Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csproj.CoreCompileInputs.cache
+/Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/obj/Debug/MovieSearch.dll
+/Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/obj/Debug/MovieSearch.pdb

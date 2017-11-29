@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DM.MovieApi;
@@ -13,13 +14,13 @@ namespace MovieSearch
         {
             MovieDbFactory.RegisterSettings(new MovieDbSettings());
         }
-        public async Task<string> GetMovieTitle(string title){
+        public async Task<List<string>> GetMovieTitle(string title){
             var movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
             ApiSearchResponse<MovieInfo> response = await movieApi.SearchByTitleAsync(title);
-            if (response.Results.FirstOrDefault() != null)
-                return response.Results.FirstOrDefault().Title;
+            if (response.Results.ToList() != null)
+                return response.Results.Select(x => x.Title).ToList();
             else
-                return "No movie found";
+                return new List<string>();
         }
 
     }

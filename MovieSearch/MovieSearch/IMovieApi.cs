@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace MovieSearch
 {
     public interface IMovieApi
     {
-        Task<string> GetMovieTitle(string title);
+        Task<List<string>> GetMovieTitle(string title);
     }
 }
