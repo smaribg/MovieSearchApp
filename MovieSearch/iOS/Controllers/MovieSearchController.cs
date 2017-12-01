@@ -29,15 +29,16 @@ namespace MovieSearch.iOS
             this.Title = "MovieSearch";
 			this.View.BackgroundColor = UIColor.White;
 
-            UILabel promptLabel = displayLabel();
+            //UILabel promptLabel = displayLabel();
             UIActivityIndicatorView loading = Loading();
             UITextField name = nameField();
+            name.Placeholder = "Enter Title";
             UIButton searchButt = searchButton(loading,name);
             UILabel greetingLabel = greeting();
 
             loading.Hidden = true;
 
-            this.View.AddSubviews(new UIView[] {loading,promptLabel,name,searchButt,greetingLabel});
+            this.View.AddSubviews(new UIView[] {loading,name,searchButt,greetingLabel});
 
 
         }

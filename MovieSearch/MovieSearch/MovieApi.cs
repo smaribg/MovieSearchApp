@@ -10,34 +10,29 @@ namespace MovieSearch
 {
     public class MovieApi : IMovieApi
     {
+        private IApiMovieRequest _api;
         public MovieApi()
         {
             MovieDbFactory.RegisterSettings(new MovieDbSettings());
-        }
-        private async Task<List<string>> getActors(int id)
-        {
-            var movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
-            ApiQueryResponse<MovieCredit> response = await movieApi.GetCreditsAsync(id);
-            if(response.Item == null){
-                return new List<string>();
-            }
-            return response.Item.CastMembers.Select(x => x.Name).Take(3).ToList();
-        }
-        private async Task<int> getRuntime(int id)
-        {
-            var movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
-            ApiQueryResponse<DM.MovieApi.MovieDb.Movies.Movie> response = await movieApi.FindByIdAsync(id);
-            if(response.Item != null){
-				return response.Item.Runtime;
-			}
-            return 0;
-                
+            _api = MovieDbFactory.Create<IApiMovieRequest>().Value;
         }
 
-        public async Task<List<Movie>> GetTopRatedMovies(){
-            var movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
-            ApiSearchResponse<MovieInfo> response = await movieApi.GetTopRatedAsync();
+        public async Task<List<Movie>> GetTopRatedMovies()
+        {
+            ApiSearchResponse<MovieInfo> response = await _api.GetTopRatedAsync();
+            return await GetMovieFromResponse(response);
+        }
+
+        public async Task<List<Movie>> GetMovieTitle(string title)
+        {
+            ApiSearchResponse<MovieInfo> response = await _api.SearchByTitleAsync(title);
+            return await GetMovieFromResponse(response);
+        }
+
+        private async Task<List<Movie>> GetMovieFromResponse(ApiSearchResponse<MovieInfo> response)
+        {
             List<Movie> movies;
+
 
             if (response.Results != null)
             {
@@ -53,6 +48,7 @@ namespace MovieSearch
                     Id = x.Id,
                     Genres = x.Genres.Select(y => y.Name).ToList(),
                     AverageVote = x.VoteAverage
+
                 }).ToList();
                 foreach (Movie m in movies)
                 {
@@ -64,43 +60,29 @@ namespace MovieSearch
             }
             else
                 return new List<Movie>();
-            
         }
 
-        public async Task<List<Movie>> GetMovieTitle(string title){
-
+        private async Task<List<string>> getActors(int id)
+        {
             var movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
-            ApiSearchResponse<MovieInfo> response = await movieApi.SearchByTitleAsync(title);
-            List<Movie> movies;
-
-
-            if (response.Results != null)
+            ApiQueryResponse<MovieCredit> response = await movieApi.GetCreditsAsync(id);
+            if (response.Item == null)
             {
-                movies = response.Results.Select(x => new Movie
-                {
-                    Title = x.Title,
-                    Year = x.ReleaseDate.Year,
-                    ImageRemote = x.PosterPath,
-                    ImageLocal = "",
-                    BackdropRemote = x.BackdropPath,
-                    BackdropLocal = "",
-                    Description = x.Overview,
-                    Id = x.Id,
-                    Genres = x.Genres.Select(y => y.Name).ToList(),
-                    AverageVote = x.VoteAverage
-                 
-                }).ToList();
-                foreach(Movie m in movies){
-                    m.Actors = await getActors(m.Id);
-                    m.Runtime = await getRuntime(m.Id);
-                }
-
-                return movies;
+                return new List<string>();
             }
-            else
-                return new List<Movie>();
+            return response.Item.CastMembers.Select(x => x.Name).Take(3).ToList();
         }
 
+        private async Task<int> getRuntime(int id)
+        {
+            var movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
+            ApiQueryResponse<DM.MovieApi.MovieDb.Movies.Movie> response = await movieApi.FindByIdAsync(id);
+            if (response.Item != null)
+            {
+                return response.Item.Runtime;
+            }
+            return 0;
 
+        }
     }
 }

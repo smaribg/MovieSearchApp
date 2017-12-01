@@ -23,6 +23,7 @@ namespace MovieSearch.iOS
         {
             return 120;
         }
+
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
             var cell = (MovieCell)tableView.DequeueReusableCell((NSString)this.NameListCellId);

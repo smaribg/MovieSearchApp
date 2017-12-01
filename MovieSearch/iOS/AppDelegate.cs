@@ -29,6 +29,7 @@ namespace MovieSearch.iOS
             var movieapi = new MovieApi();
 
             var imageDownloader = new ImageDownloader(new StorageClient());
+
             var searchController = new MovieSearchController(movieapi,imageDownloader);
             var topRatedController = new TopRatedController(movieapi,imageDownloader);
 

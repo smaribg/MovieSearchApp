@@ -19,7 +19,8 @@ namespace MovieSearch.iOS.Controllers
         {
             _api = movieApi;
             _imgDl = im;
-            this.TabBarItem = new UITabBarItem(UITabBarSystemItem.Favorites, 0);
+            this.TabBarItem = new UITabBarItem(UITabBarSystemItem.TopRated, 0);
+            this.TabBarItem.Title = "Top Rated";
             _api.GetTopRatedMovies();
 
         }
@@ -58,6 +59,9 @@ namespace MovieSearch.iOS.Controllers
         }
 
         private async void loadData(){
+            this.TableView.Source = new MovieDataSource(new List<Movie>(), onSelectedMovie);
+            this.TableView.ReloadData();
+
             this.TableView.ScrollEnabled = false;
 
             _loading.StartAnimating();

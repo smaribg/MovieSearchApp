@@ -23,23 +23,12 @@ namespace MovieSearch.iOS.Controllers
             this.View.BackgroundColor = UIColor.White;
             this.Title = "Movie info";
             var backdrop = backdropView();
-            var titl = titleLabel();
-            titl.SizeToFit();
-            titl.TextContainer.LineBreakMode = UILineBreakMode.TailTruncation;
-            titl.TextContainer.MaximumNumberOfLines = 2;
-            if (titl.Frame.Height > 50){
-                titl.Frame = new CGRect(135, 220, this.View.Bounds.Width - 155, 50);
-
-            }
-            else{
-                titl.Frame = new CGRect(135, 220, this.View.Bounds.Width - 155, titl.Frame.Height);
-
-            }
-            var titlHeight = titl.Frame.Height;
+            var title = titleLabel();
+            var titlHeight = title.Frame.Height;
             var info = infoLabel(titlHeight);
             var image = imageView();
 			var desc = descriptionLabel();
-            this.View.AddSubviews(new UIView[] { backdrop,titl,info,image,desc });
+            this.View.AddSubviews(new UIView[] { backdrop,title,info,image,desc });
 
 
         }
@@ -55,13 +44,27 @@ namespace MovieSearch.iOS.Controllers
 
         private UITextView titleLabel()
         {
-            return new UITextView()
+            var title =  new UITextView()
             {
                 Frame = new CGRect(135, 220, this.View.Bounds.Width - 155, 50),
                 Text = _movie.Title,
                 Font = UIFont.FromName("ArialMT", 18f),
                 TextColor = UIColor.Black,
             };
+            title.SizeToFit();
+            title.TextContainer.LineBreakMode = UILineBreakMode.TailTruncation;
+            title.TextContainer.MaximumNumberOfLines = 2;
+            if (title.Frame.Height > 50)
+            {
+                title.Frame = new CGRect(135, 220, this.View.Bounds.Width - 155, 50);
+
+            }
+            else
+            {
+                title.Frame = new CGRect(135, 220, this.View.Bounds.Width - 155, title.Frame.Height);
+
+            }
+            return title;
         }
 
         private UILabel infoLabel(nfloat height)
