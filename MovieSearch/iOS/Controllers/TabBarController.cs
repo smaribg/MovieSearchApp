@@ -9,7 +9,7 @@ namespace MovieSearch.iOS.Controllers
         {
             base.ViewDidLoad();
 
-            this.TabBar.BackgroundColor = UIColor.Gray;
+            this.TabBar.BackgroundColor = UIColor.White;
             this.TabBar.TintColor = UIColor.FromRGB(14,122,254);
 
             this.SelectedIndex = 0;
