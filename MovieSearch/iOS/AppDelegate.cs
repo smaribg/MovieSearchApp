@@ -1,6 +1,8 @@
-﻿using Foundation;
+﻿using System.Collections.Generic;
+using Foundation;
+using MovieDownload;
+using MovieSearch.iOS.Controllers;
 using UIKit;
-
 
 namespace MovieSearch.iOS
 {
@@ -25,8 +27,19 @@ namespace MovieSearch.iOS
             // If not required for your application you can safely delete this method
             this.Window = new UIWindow(UIScreen.MainScreen.Bounds);
             var movieapi = new MovieApi();
-            var controller = new MovieSearchController(movieapi);
-            this.Window.RootViewController = new UINavigationController(controller);
+
+            var imageDownloader = new ImageDownloader(new StorageClient());
+            var searchController = new MovieSearchController(movieapi,imageDownloader);
+            var topRatedController = new TopRatedController(movieapi,imageDownloader);
+
+            var searchControllerNavigation = new UINavigationController(searchController);
+            var topRatedControllerNavigation = new UINavigationController(topRatedController);
+
+            var taBar = new TabBarController()
+            {
+                ViewControllers = new UIViewController[]{searchControllerNavigation,topRatedControllerNavigation}
+            };
+            this.Window.RootViewController = taBar;
             this.Window.MakeKeyAndVisible();
             return true;
         }

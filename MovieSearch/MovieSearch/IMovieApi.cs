@@ -6,6 +6,8 @@ namespace MovieSearch
 {
     public interface IMovieApi
     {
-        Task<List<string>> GetMovieTitle(string title);
+        Task<List<Movie>> GetMovieTitle(string title);
+        Task<List<Movie>> GetTopRatedMovies();
+
     }
 }

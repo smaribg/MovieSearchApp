@@ -84,6 +84,7 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MovieSearch\MovieSearch.csproj">
@@ -97,6 +98,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -110,9 +113,14 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="MovieSearchController.cs" />
-    <Compile Include="MovieListController.cs" />
-    <Compile Include="MovieDataSource.cs" />
+    <Compile Include="Controllers\MovieDataSource.cs" />
+    <Compile Include="Controllers\MovieListController.cs" />
+    <Compile Include="Controllers\MovieSearchController.cs" />
+    <Compile Include="Views\MovieCell.cs" />
+    <Compile Include="Controllers\MovieDetailsController.cs" />
+    <Compile Include="Controllers\TabBarController.cs" />
+    <Compile Include="Controllers\TopRatedController.cs" />
   </ItemGroup>
+  <Import Project="..\MovieDownload\MovieDownload.projitems" Label="Shared" Condition="Exists('..\MovieDownload\MovieDownload.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
