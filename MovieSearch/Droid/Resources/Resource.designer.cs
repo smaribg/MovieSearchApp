@@ -44,8 +44,20 @@ namespace MovieSearch.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int myButton = 2131034112;
+			// aapt resource value: 0x7f060003
+			public const int displayFirstMovie = 2131099651;
+			
+			// aapt resource value: 0x7f060002
+			public const int getMovieButton = 2131099650;
+			
+			// aapt resource value: 0x7f060004
+			public const int listButton = 2131099652;
+			
+			// aapt resource value: 0x7f060000
+			public const int textView1 = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int titleInput = 2131099649;
 			
 			static Id()
 			{
@@ -62,6 +74,9 @@ namespace MovieSearch.Droid
 			
 			// aapt resource value: 0x7f030000
 			public const int Main = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int MovieListItem = 2130903041;
 			
 			static Layout()
 			{
@@ -104,6 +119,25 @@ namespace MovieSearch.Droid
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int MyTheme = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int MyTheme_Splash = 2131034113;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

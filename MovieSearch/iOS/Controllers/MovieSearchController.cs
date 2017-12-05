@@ -63,7 +63,7 @@ namespace MovieSearch.iOS
                 loading.StartAnimating();
                 loading.Hidden = false;
                 name.ResignFirstResponder();
-                _movies = await _api.GetMovieTitle(name.Text);
+                _movies = await _api.GetMoviesByTitle(name.Text);
                 await _imgDl.DownloadImages(_movies);
                 await _imgDl.DownloadBackdrops(_movies);
                 loading.StopAnimating();

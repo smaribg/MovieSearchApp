@@ -20,16 +20,22 @@ namespace MovieSearch
         public async Task<List<Movie>> GetTopRatedMovies()
         {
             ApiSearchResponse<MovieInfo> response = await _api.GetTopRatedAsync();
-            return await GetMovieFromResponse(response);
+            return await GetMoviesFromResponse(response);
         }
 
-        public async Task<List<Movie>> GetMovieTitle(string title)
+        public async Task<List<Movie>> GetMoviesByTitle(string title)
+        {
+            ApiSearchResponse<MovieInfo> response = await _api.SearchByTitleAsync(title);
+            return await GetMoviesFromResponse(response);
+        }
+
+        public async Task<Movie> GetMovieByTitle(string title)
         {
             ApiSearchResponse<MovieInfo> response = await _api.SearchByTitleAsync(title);
             return await GetMovieFromResponse(response);
         }
 
-        private async Task<List<Movie>> GetMovieFromResponse(ApiSearchResponse<MovieInfo> response)
+        private async Task<List<Movie>> GetMoviesFromResponse(ApiSearchResponse<MovieInfo> response)
         {
             List<Movie> movies;
 
@@ -60,6 +66,36 @@ namespace MovieSearch
             }
             else
                 return new List<Movie>();
+        }
+
+        private async Task<Movie> GetMovieFromResponse(ApiSearchResponse<MovieInfo> response)
+        {
+            Movie movie;
+
+
+            if (response.Results != null)
+            {
+                movie = response.Results.Select(x => new Movie
+                {
+                    Title = x.Title,
+                    Year = x.ReleaseDate.Year,
+                    ImageRemote = x.PosterPath,
+                    ImageLocal = "",
+                    BackdropRemote = x.BackdropPath,
+                    BackdropLocal = "",
+                    Description = x.Overview,
+                    Id = x.Id,
+                    Genres = x.Genres.Select(y => y.Name).ToList(),
+                    AverageVote = x.VoteAverage
+
+                }).FirstOrDefault();
+                movie.Actors = await getActors(movie.Id);
+                movie.Runtime = await getRuntime(movie.Id);
+
+                return movie;
+            }
+            else
+                return new Movie();
         }
 
         private async Task<List<string>> getActors(int id)

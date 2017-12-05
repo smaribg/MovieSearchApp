@@ -20,3 +20,14 @@
 /Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csproj.CoreCompileInputs.cache
 /Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/obj/Debug/MovieSearch.dll
 /Users/Andri/Projects/MovieSearchIOS/MovieSearch/MovieSearch/obj/Debug/MovieSearch.pdb
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\bin\Debug\MovieSearch.dll
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\bin\Debug\MovieSearch.pdb
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\bin\Debug\DM.MovieApi.dll
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\bin\Debug\DM.MovieApi.pdb
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\bin\Debug\DM.MovieApi.xml
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\obj\Debug\MovieSearch.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\obj\Debug\MovieSearch.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\obj\Debug\MovieSearch.dll
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\obj\Debug\MovieSearch.pdb
