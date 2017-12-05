@@ -36,12 +36,12 @@ namespace MovieSearch.Droid
                 view = this._context.LayoutInflater.Inflate(Resource.Layout.MovieListItem, null);
 
             var movie = this._movieList[position];
+            view.FindViewById<TextView>(Resource.Id.title).Text = movie.Title;
+
+            view.FindViewById<TextView>(Resource.Id.year).Text = String.Join(",", movie.Actors.ToArray());
 
 
-
-
-            //fill in your items
-            //holder.Title.Text = "new text here";
+            
 
             return view;
         }

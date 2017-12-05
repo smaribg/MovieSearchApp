@@ -53,11 +53,23 @@ namespace MovieSearch.Droid
 			// aapt resource value: 0x7f060004
 			public const int listButton = 2131099652;
 			
+			// aapt resource value: 0x7f060005
+			public const int listItem = 2131099653;
+			
+			// aapt resource value: 0x7f060006
+			public const int picture = 2131099654;
+			
 			// aapt resource value: 0x7f060000
 			public const int textView1 = 2131099648;
 			
+			// aapt resource value: 0x7f060007
+			public const int title = 2131099655;
+			
 			// aapt resource value: 0x7f060001
 			public const int titleInput = 2131099649;
+			
+			// aapt resource value: 0x7f060008
+			public const int year = 2131099656;
 			
 			static Id()
 			{
