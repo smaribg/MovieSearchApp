@@ -36,7 +36,7 @@ namespace MovieSearch.Droid
                 view = this._context.LayoutInflater.Inflate(Resource.Layout.MovieListItem, null);
 
             var movie = this._movieList[position];
-            
+
 
 
 
@@ -47,20 +47,8 @@ namespace MovieSearch.Droid
         }
 
         //Fill in cound here, currently 0
-        public override int Count
-        {
-            get
-            {
-                return 0;
-            }
-        }
+        public override int Count => this._movieList.Count;
 
-        public override Movie this[int position] => throw new NotImplementedException();
-    }
-
-    class MovieListAdapterViewHolder : Java.Lang.Object
-    {
-        //Your adapter views to re-use
-        //public TextView Title { get; set; }
+        public override Movie this[int position] => this._movieList[position];
     }
 }

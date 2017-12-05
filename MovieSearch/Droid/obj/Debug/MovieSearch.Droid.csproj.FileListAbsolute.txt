@@ -55,3 +55,5 @@ C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\bin\Debug\MovieSea
 C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\android\assets\DM.MovieApi.dll.mdb
 C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\android\assets\MovieSearch.dll.mdb
 C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\android\assets\MovieSearch.Droid.dll.mdb
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\bin\Debug\MovieSearch.Droid.dll.config
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\res\layout\movielistitem.xml
