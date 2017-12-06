@@ -6,6 +6,7 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="MovieSearch" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
     <activity android:icon="@mipmap/icon" android:label="Movie search" android:theme="@style/MyTheme" android:name="md58a59fe7193c9e402f80a7a500404a919.MainActivity" />
+    <activity android:label="Movie List" android:theme="@style/MyTheme" android:name="md58a59fe7193c9e402f80a7a500404a919.MovieDetailsActivity" />
     <activity android:label="Movie List" android:theme="@style/MyTheme" android:name="md58a59fe7193c9e402f80a7a500404a919.MovieListActivity" />
     <activity android:label="MovieSearch" android:theme="@style/MyTheme" android:name="md58a59fe7193c9e402f80a7a500404a919.SplashActivity">
       <intent-filter>
@@ -21,5 +22,11 @@
         <category android:name="mono.android.intent.category.SEPPUKU.com.companyname.MovieSearch" />
       </intent-filter>
     </receiver>
+    <meta-data android:name="android.support.VERSION" android:value="25.4.0" />
+    <meta-data android:name="android.support.VERSION" android:value="25.4.0" />
+    <meta-data android:name="android.support.VERSION" android:value="25.4.0" />
+    <meta-data android:name="android.support.VERSION" android:value="25.4.0" />
+    <meta-data android:name="android.support.VERSION" android:value="25.4.0" />
+    <meta-data android:name="android.support.VERSION" android:value="25.4.0" />
   </application>
 </manifest>

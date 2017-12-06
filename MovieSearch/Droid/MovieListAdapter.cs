@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Com.Bumptech.Glide;
+using Com.Bumptech.Glide.Request;
 
 namespace MovieSearch.Droid
 {
@@ -17,6 +19,7 @@ namespace MovieSearch.Droid
 
         private readonly Activity _context;
         private readonly List<Movie> _movieList;
+        private readonly string ImageUrl = "http://image.tmdb.org/t/p/original";
         public MovieListAdapter(Activity context, List<Movie> movieList)
         {
             this._context = context;
@@ -39,7 +42,9 @@ namespace MovieSearch.Droid
             view.FindViewById<TextView>(Resource.Id.title).Text = movie.Title;
 
             view.FindViewById<TextView>(Resource.Id.year).Text = String.Join(",", movie.Actors.ToArray());
-
+            var imageView = view.FindViewById<ImageView>(Resource.Id.picture);
+            Glide.With(_context).Load(ImageUrl + movie.ImageRemote).Into(imageView);
+        
 
             
 

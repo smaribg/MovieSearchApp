@@ -14,16 +14,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/titleInput" />
     <Button
-        android:text="Get movie"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/getMovieButton" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="36.0dp"
-        android:id="@+id/displayFirstMovie" />
-    <Button
-        android:text="See list of movies"
+        android:text="Get Movies"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/listButton" />

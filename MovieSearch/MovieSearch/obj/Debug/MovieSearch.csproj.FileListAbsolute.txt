@@ -27,7 +27,6 @@ C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\bin\Debug\Ne
 C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\bin\Debug\DM.MovieApi.pdb
 C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\bin\Debug\DM.MovieApi.xml
-C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\obj\Debug\MovieSearch.csprojResolveAssemblyReference.cache
 C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\obj\Debug\MovieSearch.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\obj\Debug\MovieSearch.dll
 C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\MovieSearch\obj\Debug\MovieSearch.pdb

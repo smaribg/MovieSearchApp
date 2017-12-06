@@ -23,19 +23,8 @@ namespace MovieSearch.Droid
 
             // Get our button from the layout resource,
             // and attach an event to it
-            var button = FindViewById<Button>(Resource.Id.getMovieButton);
             var textField = FindViewById<EditText>(Resource.Id.titleInput);
-            var firstMovie = FindViewById<TextView>(Resource.Id.displayFirstMovie);
             var listButton = FindViewById<Button>(Resource.Id.listButton);
-
-            button.Click += async (object sender, EventArgs e) => 
-            {
-                var manager = (InputMethodManager)this.GetSystemService(InputMethodService);
-                manager.HideSoftInputFromWindow(textField.WindowToken, 0);
-                Movie movie = await Api.GetMovieByTitle(textField.Text);
-                firstMovie.Text = movie.Title;
-
-            };
 
             listButton.Click += async (object sender, EventArgs e) =>
             {

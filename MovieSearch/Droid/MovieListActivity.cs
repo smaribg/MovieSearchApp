@@ -24,6 +24,14 @@ namespace MovieSearch.Droid
             var jsonString = this.Intent.GetStringExtra("movieList");
             var movieList = JsonConvert.DeserializeObject<List<Movie>>(jsonString);
 
+            this.ListView.ItemClick += (sender, args) =>
+            {
+                var intent = new Intent(this, typeof(MovieDetailsActivity));
+                var movie = movieList[args.Position];
+                intent.PutExtra("singleMovie", JsonConvert.SerializeObject(movie));
+                this.StartActivity(intent);
+            };
+
             this.ListAdapter = new MovieListAdapter(this, movieList);
         }
     }
