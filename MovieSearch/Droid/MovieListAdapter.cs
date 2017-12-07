@@ -41,12 +41,10 @@ namespace MovieSearch.Droid
             var movie = this._movieList[position];
             view.FindViewById<TextView>(Resource.Id.title).Text = movie.Title;
 
-            view.FindViewById<TextView>(Resource.Id.year).Text = String.Join(",", movie.Actors.ToArray());
+            view.FindViewById<TextView>(Resource.Id.info).Text = String.Join(",", movie.Actors.ToArray());
             var imageView = view.FindViewById<ImageView>(Resource.Id.picture);
             Glide.With(_context).Load(ImageUrl + movie.ImageRemote).Into(imageView);
-        
-
-            
+            view.FindViewById<TextView>(Resource.Id.rating).Text = "★" + movie.AverageVote;
 
             return view;
         }

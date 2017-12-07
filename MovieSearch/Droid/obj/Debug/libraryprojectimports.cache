@@ -2,13 +2,21 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\__library_projects__\Xamarin.Android.Support.Design\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\__library_projects__\Xamarin.Android.Support.Transition\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\__library_projects__\Xamarin.Android.Support.v4\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Android.Support.v4\library_project_imports\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\__library_projects__\Xamarin.Android.Support.Design.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\__library_projects__\Xamarin.Android.Support.Transition.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\__library_projects__\Xamarin.Android.Support.v4.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

@@ -19,7 +19,7 @@ namespace MovieSearch.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            SetContentView(Resource.Layout.MovieList);
             // Create your application here
             var jsonString = this.Intent.GetStringExtra("movieList");
             var movieList = JsonConvert.DeserializeObject<List<Movie>>(jsonString);
@@ -31,8 +31,11 @@ namespace MovieSearch.Droid
                 intent.PutExtra("singleMovie", JsonConvert.SerializeObject(movie));
                 this.StartActivity(intent);
             };
-
             this.ListAdapter = new MovieListAdapter(this, movieList);
+
+            var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
+            this.SetActionBar(toolbar);
+            this.ActionBar.Title = "MovieSearch";
         }
     }
 }

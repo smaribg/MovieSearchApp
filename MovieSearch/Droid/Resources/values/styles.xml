@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
-  <style name="MyTheme" parent="android:Theme.Light">
-  </style>
-  <style name="MyTheme.Splash" parent ="android:Theme.Light">
+  <style name="MyTheme" parent="Theme.AppCompat.Light">
     <item name="android:windowNoTitle">true</item>
+    <item name="android:windowActionBar">false</item>
+    <item name="android:colorPrimary">#f9f9f9</item>
+    <item name="android:colorSecondary">#d9534f</item>
+    <item name="colorAccent">#d9534f</item>
+
+    <item name="colorControlNormal">#d9534f</item>
+
   </style>
 </resources>

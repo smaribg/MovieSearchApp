@@ -65,3 +65,14 @@ C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\bin\Debug\MovieSea
 C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\android\assets\DM.MovieApi.dll.mdb
 C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\android\assets\MovieSearch.dll.mdb
 C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\android\assets\MovieSearch.Droid.dll.mdb
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\bin\Debug\Xamarin.Android.Support.Transition.dll
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\res\layout\moviedetails.xml
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\res\layout\titleinput.xml
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\res\layout\toolbar.xml
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\res\layout\movielist.xml
+C:\Users\Lenovo\source\repos\MovieSearchIOS\MovieSearch\Droid\obj\Debug\res\layout\toprated.xml
