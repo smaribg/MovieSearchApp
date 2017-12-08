@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_margin="20dp"
         android:layout_height="wrap_content"
-        android:hint="⚲ Search title"
+        android:hint="Enter title"
         android:backgroundTint="#d9534f"
         android:id="@+id/titleInput" />
     <Button

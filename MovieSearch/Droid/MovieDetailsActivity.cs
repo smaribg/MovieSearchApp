@@ -33,7 +33,8 @@ namespace MovieSearch.Droid
             {
                 genres += s + ", ";
             }
-            genres = genres.Remove(genres.Length - 2);
+            if(genres.Length != 0)
+                genres = genres.Remove(genres.Length - 2);
 
             this.FindViewById<TextView>(Resource.Id.info).Text = movie.Runtime + " min | " + genres;
             var poster = this.FindViewById<ImageView>(Resource.Id.poster);
@@ -41,6 +42,7 @@ namespace MovieSearch.Droid
             var backdrop = this.FindViewById<ImageView>(Resource.Id.backdrop);
             Glide.With(this).Load(ImageUrl + movie.BackdropRemote).Into(backdrop);
             this.FindViewById<TextView>(Resource.Id.description).Text = movie.Description;
+            this.FindViewById<RatingBar>(Resource.Id.ratingBar).Rating = (float)movie.AverageVote;
 
 
             var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
